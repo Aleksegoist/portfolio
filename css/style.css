@@ -53,6 +53,7 @@ a {
 }
 
 body {
+  background-color: #ffffff;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -65,7 +66,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1170px;
+  max-width: 1230px;
 }
 
 .title {
