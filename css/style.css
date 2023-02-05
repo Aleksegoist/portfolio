@@ -48,6 +48,146 @@ select {
   font: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #333333;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
+}
+
+.header {
+  height: 100vh;
+  background-image: url('../images/bg_image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 474px rgba(35, 82, 222, 0.5);
+}
+
+.header__top {
+  padding-top: 75px;
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  transition: all 0.5s;
+}
+
+.logo:focus {
+  outline: 1px solid #2352de;
+  border-radius: 3px;
+}
+
+.logo:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.logo:active {
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+}
+
+.menu__header {
+  display: flex;
+}
+
+.menu__header-item + .menu__header-item {
+  margin-left: 30px;
+}
+
+.item {
+  font-weight: 600;
+  line-height: 130%;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.item:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.item:focus {
+  outline: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.item:active {
+  opacity: 0.7;
+}
+
+.header__content {
+  color: #ffffff;
+  position: relative;
+}
+
+.header__content-inner {
+  max-width: 500px;
+  min-height: calc(100vh - 128px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__subtitle {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 117px;
+}
+
+.header__arrow-link {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.arrow__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 130%;
+  transition: all 0.5s;
+}
+
+.arrow__text:hover {
+  text-decoration: underline;
+}
+
+.header__arrow-inner:focus {
+  outline: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.header__arrow-inner:active {
+  opacity: 0.7;
 }
