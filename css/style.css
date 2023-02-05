@@ -8,8 +8,8 @@ html {
   box-sizing: inherit;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -21,19 +21,16 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+ul,
+ol,
+li {
   margin: 0;
+  font-weight: normal;
 }
 
-ul[class] {
-  list-style: none;
+ul li,
+ol li {
+  list-style-type: none;
 }
 
 img {
@@ -41,42 +38,38 @@ img {
   display: block;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
   background-color: #ffffff;
-  min-height: 100vh;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  /* min-height: 100vh; */
+  font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 160%;
+  font-size: 16px;
+  line-height: 1.3;
   color: #333333;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1230px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section {
+  padding: 140px 0;
 }
 
 .title {
   font-weight: 700;
   font-size: 48px;
-  line-height: 130%;
-  color: #333333;
+  margin-bottom: 60px;
   position: relative;
   display: inline-block;
-  margin: 140px 0 60px;
 }
 
 .title::after {
@@ -92,139 +85,116 @@ body {
 .header {
   height: 100vh;
   background-image: url('../images/bg_image.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  box-shadow: inset 0 0 0 474px rgba(35, 82, 222, 0.5);
+  background-color: rgba(35, 82, 222, 0.5);
+  background-blend-mode: overlay;
+  color: #ffffff;
+  position: relative;
 }
 
 .header__top {
-  padding-top: 75px;
-}
-
-.header__top-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 75px;
 }
 
 .logo {
-  transition: all 0.5s;
+  transition: box-shadow 0.3s ease-in-out, opacity 0.2s linear;
 }
 
 .logo:focus {
-  outline: 1px solid #2352de;
-  border-radius: 3px;
+  outline: 0;
+  box-shadow: 0 0 0 3px #2352de;
 }
 
 .logo:hover {
-  background: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
 }
 
 .logo:active {
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0.7;
+  opacity: 0.5;
+}
+
+.header__inner {
+  height: calc(100vh - 128px);
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  max-width: 530px;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 117px;
+}
+
+.header__title span {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.arrow__text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('../images/header_arrow.svg');
+  background-repeat: no-repeat;
+  background-position: top 30px center;
+  padding-bottom: 33px;
 }
 
 .menu__header {
   display: flex;
 }
 
-.menu__header-item + .menu__header-item {
-  margin-left: 30px;
+.menu__header-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.item {
-  font-weight: 600;
-  line-height: 130%;
-  color: #ffffff;
-  transition: all 0.5s;
-}
-
-.item:hover {
-  border-bottom: 1px solid #ffffff;
-}
-
-.item:focus {
-  outline: 1px solid #ffffff;
-  border-radius: 3px;
-}
-
-.item:active {
-  opacity: 0.7;
-}
-
-.header__content {
-  color: #ffffff;
-  position: relative;
-}
-
-.header__content-inner {
-  max-width: 500px;
-  min-height: calc(100vh - 128px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.header__subtitle {
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 130%;
-}
-
-.header__title {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 117px;
-}
-
-.header__arrow-link {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
+.item,
 .arrow__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  color: #ffffff;
   font-weight: 600;
-  line-height: 130%;
-  transition: all 0.5s;
+  font-size: 18px;
+  text-decoration: underline 1px transparent;
+  transition: box-shadow 0.3s ease-in-out, opacity 0.2s linear,
+    text-decoration-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.item:hover,
 .arrow__text:hover {
-  text-decoration: underline;
+  text-decoration-color: #fff;
 }
 
-.header__arrow-inner:focus {
-  outline: 1px solid #ffffff;
+.item:focus,
+.arrow__text:focus {
+  outline: 0;
   border-radius: 3px;
+  box-shadow: 0 0 0 2px #fff;
 }
 
-.header__arrow-inner:active {
+.item:active,
+.arrow__text:active {
   opacity: 0.7;
 }
 
-.about {
-  padding-bottom: 115px;
+.about__text p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.about__inner p {
-  max-width: 100%;
-  margin-bottom: 25px;
+.about__text p:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .skills {
   background-color: #f6f6f8;
-  padding-bottom: 140px;
+}
+
+.skills__img {
+  max-width: 415px;
+  height: 450px;
 }
 
 .skills__inner {
@@ -241,7 +211,9 @@ body {
 .skills__item {
   display: flex;
   align-items: center;
-  margin-bottom: 86px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 90px;
 }
 
 .skills__item:last-child {
@@ -249,29 +221,26 @@ body {
 }
 
 .skills__text {
-  width: 64px;
+  flex-grow: 1;
   font-weight: 600;
-  line-height: 100%;
+  line-height: 32px;
   text-transform: uppercase;
 }
 
-.skills__bg {
-  position: relative;
+.skills__meter {
+  max-width: 600px;
   width: 100%;
-  height: 32px;
+}
+
+.skills__meter::-webkit-meter-bar {
   background-color: #dbdbed;
+  height: 32px;
+  border-radius: 0;
+  border: 0;
 }
 
-.skills__line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.skills__meter::-webkit-meter-optimum-value {
   background-color: #2352de;
-}
-
-.service {
-  padding-bottom: 140px;
 }
 
 .service__list-items {
@@ -280,38 +249,25 @@ body {
 }
 
 .service__item {
-  width: 330px;
-  padding-top: 80px;
-  position: relative;
-}
-
-.service__item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-}
-
-.service__item--teg::before {
+  max-width: 330px;
+  padding-top: 90px;
   background-image: url('../images/teg.svg');
+  background-repeat: no-repeat;
 }
-.service__item--cms::before {
+
+.service__item--cms {
   background-image: url('../images/cms.svg');
 }
-.service__item--chat::before {
+.service__item--chat {
   background-image: url('../images/chat.svg');
 }
 
 .service__item-title {
   font-weight: 600;
   font-size: 28px;
-  line-height: 130%;
   margin-bottom: 25px;
 }
 
-.service__item-text {
-  font-size: 16px;
-  line-height: 160%;
+.service__item-text p {
+  line-height: 1.6;
 }
