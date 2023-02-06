@@ -60,13 +60,13 @@ body {
 }
 
 .section {
-  padding: 140px 0;
+  padding: 139px 0;
 }
 
 .title {
   font-weight: 700;
   font-size: 48px;
-  margin-bottom: 60px;
+  margin-bottom: 59px;
   position: relative;
   display: inline-block;
 }
@@ -125,7 +125,7 @@ body {
   max-width: 530px;
   font-weight: 700;
   font-size: 90px;
-  line-height: 117px;
+  line-height: 130px;
 }
 
 .header__title span {
@@ -212,7 +212,7 @@ body {
   align-items: center;
   position: relative;
   width: 100%;
-  margin-bottom: 90px;
+  margin-bottom: 86px;
 }
 
 .skills__item:last-child {
@@ -249,7 +249,7 @@ body {
 
 .service__item {
   max-width: 330px;
-  padding-top: 90px;
+  padding-top: 92px;
   background-image: url('../images/teg.svg');
   background-repeat: no-repeat;
 }
@@ -264,7 +264,7 @@ body {
 .service__item-title {
   font-weight: 600;
   font-size: 28px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .service__item-text p {
@@ -299,13 +299,14 @@ body {
 }
 
 .works__btn {
+  font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
   background-color: transparent;
   border: none;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.6;
   cursor: pointer;
-  margin-right: 45px;
+  margin-right: 34px;
   transition: color 0.4s ease, box-shadow 0.3s ease-in-out, opacity 0.2s linear,
     text-decoration-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -332,7 +333,7 @@ body {
 .works__portfolio {
   column-count: 3;
   gap: 45px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .works__item {
