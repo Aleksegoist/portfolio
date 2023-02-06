@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -81,8 +82,8 @@
               src="images/skills_image.jpg"
               alt="photo skills"
             />
-            <div class="skills__info-item">
-              <div class="skills__item">
+            <ul class="skills__info-item">
+              <li class="skills__item">
                 <span class="skills__text">html</span>
                 <meter
                   class="skills__meter"
@@ -90,8 +91,8 @@
                   max="100"
                   value="85"
                 ></meter>
-              </div>
-              <div class="skills__item">
+              </li>
+              <li class="skills__item">
                 <span class="skills__text">css</span>
                 <meter
                   class="skills__meter"
@@ -99,8 +100,8 @@
                   max="100"
                   value="80"
                 ></meter>
-              </div>
-              <div class="skills__item">
+              </li>
+              <li class="skills__item">
                 <span class="skills__text">js</span>
                 <meter
                   class="skills__meter"
@@ -108,8 +109,8 @@
                   max="100"
                   value="60"
                 ></meter>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -117,8 +118,8 @@
       <section class="section service">
         <div class="container">
           <h2 class="title">Послуги</h2>
-          <div class="service__list-items">
-            <div class="service__item">
+          <ul class="service__list-items">
+            <li class="service__item">
               <h3 class="service__item-title">Верстка проєктів</h3>
               <div class="service__item-text">
                 <p>
@@ -126,16 +127,14 @@
                   прикладами робіт, які вам подобаються
                 </p>
               </div>
-            </div>
-
-            <div class="service__item service__item--cms">
+            </li>
+            <li class="service__item service__item--cms">
               <h3 class="service__item-title">Посадка на CMS</h3>
               <div class="service__item-text">
                 <p>Інтегрую ваш проєкт з однією з популярних CMS</p>
               </div>
-            </div>
-
-            <div class="service__item service__item--chat">
+            </li>
+            <li class="service__item service__item--chat">
               <h3 class="service__item-title">Підтримка сайта</h3>
               <div class="service__item-text">
                 <p>
@@ -143,12 +142,54 @@
                   проєкта
                 </p>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!----- section works ----->
+      <section class="works">
+        <div class="container">
+          <h2 class="title title__center">Мої роботи</h2>
+          <div class="works__menu">
+            <button class="works__btn" data-filter="all">Усі роботи</button
+            ><button class="works__btn" data-filter=".category-a">
+              Лендінги</button
+            ><button class="works__btn" data-filter=".category-b">
+              Корпоративні</button
+            ><button class="works__btn" data-filter=".category-c">
+              E-commerce
+            </button>
+          </div>
+          <div class="works__portfolio">
+            <div class="works__item mix category-a">
+              <img src="images/portfolio/1.jpg" alt="фото портфолио" />
             </div>
+            <div class="works__item mix category-a">
+              <img src="images/portfolio/2.jpg" alt="фото портфолио" />
+            </div>
+            <div class="works__item mix category-b">
+              <img src="images/portfolio/3.jpg" alt="фото портфолио" />
+            </div>
+            <div class="works__item mix category-b">
+              <img src="images/portfolio/4.jpg" alt="фото портфолио" />
+            </div>
+            <div class="works__item mix category-c">
+              <img src="images/portfolio/5.jpg" alt="фото портфолио" />
+            </div>
+            <div class="works__item mix category-c">
+              <img src="images/portfolio/6.jpg" alt="фото портфолио" />
+            </div>
+          </div>
+          <div class="works__btn">
+            <button>Завантажити ще</button>
           </div>
         </div>
       </section>
     </main>
+    <!----- scripts ----->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
