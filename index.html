@@ -15,7 +15,7 @@
   </head>
   <body>
     <!----- menu top ----->
-    <header class="header">
+    <header class="header" style="background-image: url('images/bg_image.jpg')">
       <div class="container">
         <nav class="header__top">
           <a class="logo" href="#"><img src="images/logo.svg" alt="logo" /></a>
@@ -44,7 +44,7 @@
           <h1 class="header__title">
             <span>Вітаю, я Сергій Сірко</span> frontend- розробник
           </h1>
-          <a href="#" class="arrow__text">дивитися роботи</a>
+          <a class="arrow__text" href="#">дивитися роботи</a>
         </div>
       </div>
     </header>
@@ -85,6 +85,9 @@
             <ul class="skills__info-item">
               <li class="skills__item">
                 <span class="skills__text">html</span>
+                <span class="sr-only"
+                  >Володію навиком написання HTML на 85 відсотків</span
+                >
                 <meter
                   class="skills__meter"
                   min="0"
@@ -94,6 +97,9 @@
               </li>
               <li class="skills__item">
                 <span class="skills__text">css</span>
+                <span class="sr-only"
+                  >Володію навиком написання CSS на 80 відсотків</span
+                >
                 <meter
                   class="skills__meter"
                   min="0"
@@ -103,6 +109,10 @@
               </li>
               <li class="skills__item">
                 <span class="skills__text">js</span>
+                <span class="sr-only"
+                  >Володію навиком написання коду за допомогою JS на 61
+                  відсоток</span
+                >
                 <meter
                   class="skills__meter"
                   min="0"
@@ -242,6 +252,38 @@
           <button class="btn portfolio__btn" type="button">
             Завантажити ще
           </button>
+        </div>
+      </section>
+      <!----- section works ----->
+      <section class="section recall">
+        <div class="container">
+          <h2 class="title">Відгуки клієнтів</h2>
+          <div class="recall__inner">
+            <div class="recall__client">
+              <img
+                class="recall__client-photo"
+                src="images/client-recall.jpg"
+                alt="фото клиента"
+              />
+              <h3 class="recall__client-title">Марк Цукерберг</h3>
+              <p class="recall__client-descr">
+                Фантастично! Я цілком задоволений роботою цього спеціаліста.
+                Швидко і якісно. Рекомендую!
+              </p>
+            </div>
+            <div
+              class="recall__video"
+              style="background-image: url('images/video-bg.jpg')"
+            >
+              <a
+                data-fancybox
+                data-type="iframe"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+              >
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

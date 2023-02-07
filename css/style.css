@@ -101,7 +101,6 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url('../images/bg_image.jpg');
   background-size: cover;
   background-color: rgba(35, 82, 222, 0.5);
   background-blend-mode: overlay;
@@ -261,6 +260,19 @@ body {
   background-color: #2352de;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .service__list-items {
   display: flex;
   justify-content: space-between;
@@ -370,3 +382,97 @@ body {
   background-color: #2352de;
   box-shadow: inset 0px 7px 4px rgba(0, 0, 0, 0.25);
 }
+
+.recall {
+  text-align: center;
+  background-color: #f6f6f8;
+}
+
+.recall__inner {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.recall__client {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recall__client-photo {
+  border-radius: 100%;
+  margin-bottom: 16px;
+}
+
+.recall__client-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #2352de;
+  margin-bottom: 20px;
+}
+
+.recall__client-descr {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.recall__video {
+  min-width: 570px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.recall__video::after {
+  content: '';
+  width: 86px;
+  height: 100px;
+  background-image: url('../images/play.svg');
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -43px;
+}
+
+/* .recall__video {
+  position: relative;
+}
+
+.recall__video::after {
+  content: '';
+  background-image: url('../images/play.svg');
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-repeat: no-repeat;
+} */
+/* 
+.recall__video {
+  width: 570px;
+  background-image: url('../images/video-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow__play {
+} */
+
+/* position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('../images/header_arrow.svg');
+  background-repeat: no-repeat;
+  background-position: top 30px center;
+  padding-bottom: 33px; */
