@@ -477,3 +477,146 @@ body {
 .statistic__item-review {
   background-image: url('../images/review.svg');
 }
+
+.contact {
+  padding-top: 0;
+}
+
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 99px;
+}
+
+.contact__inner-left {
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact__inner-left a {
+  color: #2352de;
+}
+
+.phone {
+  width: max-content;
+  margin-bottom: 15px;
+  transition: text-decoration 0.4s;
+}
+
+.email {
+  width: max-content;
+  transition: text-decoration 0.8s;
+}
+
+.phone:hover,
+.email:hover {
+  text-decoration: underline;
+}
+
+.phone:focus,
+.email:focus {
+  outline: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
+}
+
+.phone:active,
+.email:active {
+  text-decoration: none;
+  color: rgba(35, 82, 222, 0.7);
+}
+
+.email {
+  margin-bottom: 21px;
+}
+
+.social-ico {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url('../images/instagram.svg');
+  background-repeat: no-repeat;
+}
+
+.social-ico-fb {
+  background-image: url('../images/facebook.svg');
+}
+
+.social-ico-telegram {
+  background-image: url('../images/telegram.svg');
+}
+
+.social-ico:not(:last-child) {
+  margin-right: 20px;
+}
+
+.contact__social a:focus {
+  outline: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(35, 82, 222, 0.5);
+}
+
+.contact__social a:active {
+  box-shadow: none;
+}
+
+.form {
+  max-width: 540px;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form-top input,
+.form-text textarea {
+  width: 255px;
+  border: none;
+  display: block;
+  background-color: #f6f6f8;
+  padding: 13px 15px;
+}
+
+.form-top input::placeholder,
+.form-text textarea::placeholder {
+  font-size: 14px;
+  color: #9c9cab;
+}
+
+.form-top input:focus {
+  outline: 0;
+  box-shadow: 0px 0px 0px 3px rgba(35, 82, 222, 0.5);
+}
+
+.form-text textarea {
+  width: 100%;
+  min-height: 115px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 153px;
+  background-color: #343740;
+}
