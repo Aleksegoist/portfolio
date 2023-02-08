@@ -38,6 +38,10 @@ img {
   display: block;
 }
 
+label {
+  display: block;
+}
+
 button {
   appearance: none;
   border: none;
@@ -576,11 +580,13 @@ body {
   gap: 30px;
   margin-bottom: 30px;
 }
+.form label {
+  margin-bottom: 10px;
+}
 
-.form p {
+.form label {
   font-weight: 600;
   font-size: 14px;
-  margin-bottom: 10px;
 }
 
 .form-top input,
