@@ -76,7 +76,7 @@ body {
 .title {
   font-weight: 700;
   font-size: 48px;
-  margin-bottom: 59px;
+  margin-bottom: 60px;
   position: relative;
   display: inline-block;
 }
@@ -404,7 +404,7 @@ body {
 
 .recall__client-photo {
   border-radius: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 }
 
 .recall__client-title {
