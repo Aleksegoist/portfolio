@@ -14,248 +14,259 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!----- menu top ----->
-    <header class="header" style="background-image: url('images/bg_image.jpg')">
-      <div class="container">
-        <nav class="header__top">
-          <a class="logo" href="#"><img src="images/logo.svg" alt="logo" /></a>
-          <ul class="menu__header">
-            <li class="menu__header-item">
-              <a href="#" class="item">Про мене</a>
-            </li>
-            <li class="menu__header-item">
-              <a href="#" class="item">Навички</a>
-            </li>
-            <li class="menu__header-item">
-              <a href="#" class="item">Послуги</a>
-            </li>
-            <li class="menu__header-item">
-              <a href="#" class="item">Портфоліо</a>
-            </li>
-            <li class="menu__header-item">
-              <a href="#" class="item">Відгуки</a>
-            </li>
-            <li class="menu__header-item">
-              <a href="#" class="item">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__inner">
-          <h1 class="header__title">
-            <span>Вітаю, я Сергій Сірко</span> frontend- розробник
-          </h1>
-          <a class="arrow__text" href="#">дивитися роботи</a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!----- section About ----->
-      <section class="section about">
+    <div class="wrapper">
+      <!----- menu top ----->
+      <header
+        class="header"
+        style="background-image: url('images/bg_image.jpg')"
+      >
         <div class="container">
-          <h2 class="title">Про мене</h2>
-          <div class="about__text">
-            <p>
-              Вітаю всіх на своєму сайті! Мене звати Сергій, я з
-              Івано-Франківська. Займаюся фронтенд-розробкою трохи більше року.
-              До розробки займався нелюбимою справою, ходив на роботу, що не
-              подобалася мені, не міг зрозуміти, як знайти працю за покликанням
-              і робити те, що подобається, заробляючи собі на життя, допоки не
-              знайшов один цікавий курс.
-            </p>
-            <p>
-              З того часу багато чого дізнався, навчання давалося по-різному:
-              десь легше, десь складніше. Щоденна робота над навичками та
-              зусилля, яких я докладав, вже за кілька місяців принесли плоди -
-              вдалось взяти замовлення на фрілансі. З відгуками від задоволених
-              клієнтів та прикладами моїх робіт можна ознайомитися нижче
-            </p>
+          <nav class="header__top">
+            <a class="logo" href="#"
+              ><img src="images/logo.svg" alt="logo"
+            /></a>
+            <ul class="menu__header">
+              <li class="menu__header-item">
+                <a href="#" class="item">Про мене</a>
+              </li>
+              <li class="menu__header-item">
+                <a href="#" class="item">Навички</a>
+              </li>
+              <li class="menu__header-item">
+                <a href="#" class="item">Послуги</a>
+              </li>
+              <li class="menu__header-item">
+                <a href="#" class="item">Портфоліо</a>
+              </li>
+              <li class="menu__header-item">
+                <a href="#" class="item">Відгуки</a>
+              </li>
+              <li class="menu__header-item">
+                <a href="#" class="item">Контакти</a>
+              </li>
+            </ul>
+            <button class="hamburger" type="button">
+              <div class="bar"></div>
+              <span class="sr-only">Відкрити меню</span>
+            </button>
+          </nav>
+          <div class="header__inner">
+            <h1 class="header__title">
+              <span>Вітаю, я Сергій Сірко</span> frontend- розробник
+            </h1>
+            <a class="arrow__text" href="#">дивитися роботи</a>
           </div>
         </div>
-      </section>
-      <!----- section Skills ----->
-      <section class="section skills">
-        <div class="container">
-          <h2 class="title">Навички</h2>
-          <div class="skills__inner">
-            <img
-              class="skills__img"
-              src="images/skills_image.jpg"
-              alt="photo skills"
-            />
-            <ul class="skills__info-item">
-              <li class="skills__item">
-                <span class="skills__text">html</span>
-                <span class="sr-only"
-                  >Володію навиком написання HTML на 85 відсотків</span
-                >
-                <meter
-                  class="skills__meter"
-                  min="0"
-                  max="100"
-                  value="85"
-                ></meter>
+      </header>
+      <main>
+        <!----- section About ----->
+        <section class="section about">
+          <div class="container">
+            <h2 class="title">Про мене</h2>
+            <div class="about__text">
+              <p>
+                Вітаю всіх на своєму сайті! Мене звати Сергій, я з
+                Івано-Франківська. Займаюся фронтенд-розробкою трохи більше
+                року. До розробки займався нелюбимою справою, ходив на роботу,
+                що не подобалася мені, не міг зрозуміти, як знайти працю за
+                покликанням і робити те, що подобається, заробляючи собі на
+                життя, допоки не знайшов один цікавий курс.
+              </p>
+              <p>
+                З того часу багато чого дізнався, навчання давалося по-різному:
+                десь легше, десь складніше. Щоденна робота над навичками та
+                зусилля, яких я докладав, вже за кілька місяців принесли плоди -
+                вдалось взяти замовлення на фрілансі. З відгуками від
+                задоволених клієнтів та прикладами моїх робіт можна ознайомитися
+                нижче
+              </p>
+            </div>
+          </div>
+        </section>
+        <!----- section Skills ----->
+        <section class="section skills">
+          <div class="container">
+            <h2 class="title">Навички</h2>
+            <div class="skills__inner">
+              <img
+                class="skills__img"
+                src="images/skills_image.jpg"
+                alt="photo skills"
+              />
+              <ul class="skills__info-item">
+                <li class="skills__item">
+                  <span class="skills__text">html</span>
+                  <span class="sr-only"
+                    >Володію навиком написання HTML на 85 відсотків</span
+                  >
+                  <meter
+                    class="skills__meter"
+                    min="0"
+                    max="100"
+                    value="85"
+                  ></meter>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__text">css</span>
+                  <span class="sr-only"
+                    >Володію навиком написання CSS на 80 відсотків</span
+                  >
+                  <meter
+                    class="skills__meter"
+                    min="0"
+                    max="100"
+                    value="80"
+                  ></meter>
+                </li>
+                <li class="skills__item">
+                  <span class="skills__text">js</span>
+                  <span class="sr-only"
+                    >Володію навиком написання коду за допомогою JS на 61
+                    відсоток</span
+                  >
+                  <meter
+                    class="skills__meter"
+                    min="0"
+                    max="100"
+                    value="61"
+                  ></meter>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!----- section service ----->
+        <section class="section service">
+          <div class="container">
+            <h2 class="title">Послуги</h2>
+            <ul class="service__list-items">
+              <li class="service__item">
+                <h3 class="service__item-title">Верстка проєктів</h3>
+                <div class="service__item-text">
+                  <p>
+                    Зроблю якісну верстку вашого проєкта за наявним макетом або
+                    прикладами робіт, які вам подобаються
+                  </p>
+                </div>
               </li>
-              <li class="skills__item">
-                <span class="skills__text">css</span>
-                <span class="sr-only"
-                  >Володію навиком написання CSS на 80 відсотків</span
-                >
-                <meter
-                  class="skills__meter"
-                  min="0"
-                  max="100"
-                  value="80"
-                ></meter>
+              <li class="service__item service__item--cms">
+                <h3 class="service__item-title">Посадка на CMS</h3>
+                <div class="service__item-text">
+                  <p>Інтегрую ваш проєкт з однією з популярних CMS</p>
+                </div>
               </li>
-              <li class="skills__item">
-                <span class="skills__text">js</span>
-                <span class="sr-only"
-                  >Володію навиком написання коду за допомогою JS на 61
-                  відсоток</span
-                >
-                <meter
-                  class="skills__meter"
-                  min="0"
-                  max="100"
-                  value="61"
-                ></meter>
+              <li class="service__item service__item--chat">
+                <h3 class="service__item-title">Підтримка сайта</h3>
+                <div class="service__item-text">
+                  <p>
+                    Гарантую підтримку вашого сайта протягом 30 днів післе здачі
+                    проєкта
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-      <!----- section service ----->
-      <section class="section service">
-        <div class="container">
-          <h2 class="title">Послуги</h2>
-          <ul class="service__list-items">
-            <li class="service__item">
-              <h3 class="service__item-title">Верстка проєктів</h3>
-              <div class="service__item-text">
-                <p>
-                  Зроблю якісну верстку вашого проєкта за наявним макетом або
-                  прикладами робіт, які вам подобаються
-                </p>
-              </div>
-            </li>
-            <li class="service__item service__item--cms">
-              <h3 class="service__item-title">Посадка на CMS</h3>
-              <div class="service__item-text">
-                <p>Інтегрую ваш проєкт з однією з популярних CMS</p>
-              </div>
-            </li>
-            <li class="service__item service__item--chat">
-              <h3 class="service__item-title">Підтримка сайта</h3>
-              <div class="service__item-text">
-                <p>
-                  Гарантую підтримку вашого сайта протягом 30 днів післе здачі
-                  проєкта
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!----- section works ----->
-      <section class="section portfolio">
-        <div class="container">
-          <h2 class="title title__portfolio">Мої роботи</h2>
-          <ul class="portfolio__menu">
-            <li class="portfolio__menu-item">
-              <button
-                class="portfolio__menu-btn"
-                type="button"
-                data-filter="all"
-              >
-                Усі роботи
-              </button>
-            </li>
-            <li class="portfolio__menu-item">
-              <button
-                class="portfolio__menu-btn"
-                type="button"
-                data-filter=".category-a"
-              >
-                Лендінги
-              </button>
-            </li>
-            <li class="portfolio__menu-item">
-              <button
-                class="portfolio__menu-btn"
-                type="button"
-                data-filter=".category-b"
-              >
-                Корпоративні
-              </button>
-            </li>
-            <li class="portfolio__menu-item">
-              <button
-                class="portfolio__menu-btn"
-                type="button"
-                data-filter=".category-c"
-              >
-                E-commerce
-              </button>
-            </li>
-          </ul>
+        </section>
+        <!----- section works ----->
+        <!-- <section class="section portfolio">
+          <div class="container">
+            <h2 class="title title__portfolio">Мої роботи</h2>
+            <ul class="portfolio__menu">
+              <li class="portfolio__menu-item">
+                <button
+                  class="portfolio__menu-btn"
+                  type="button"
+                  data-filter="all"
+                >
+                  Усі роботи
+                </button>
+              </li>
+              <li class="portfolio__menu-item">
+                <button
+                  class="portfolio__menu-btn"
+                  type="button"
+                  data-filter=".category-a"
+                >
+                  Лендінги
+                </button>
+              </li>
+              <li class="portfolio__menu-item">
+                <button
+                  class="portfolio__menu-btn"
+                  type="button"
+                  data-filter=".category-b"
+                >
+                  Корпоративні
+                </button>
+              </li>
+              <li class="portfolio__menu-item">
+                <button
+                  class="portfolio__menu-btn"
+                  type="button"
+                  data-filter=".category-c"
+                >
+                  E-commerce
+                </button>
+              </li>
+            </ul>
 
-          <ul class="works">
-            <li class="works__item mix category-a">
-              <a class="works__link" href="#"
-                ><img
-                  class="works__img"
-                  src="images/portfolio/1.jpg"
-                  alt="фото портфолио"
-              /></a>
-            </li>
-            <li class="works__item mix category-a">
-              <a class="works__link" href="#"
-                ><img
-                  class="works__img"
-                  src="images/portfolio/2.jpg"
-                  alt="фото портфолио"
-              /></a>
-            </li>
-            <li class="works__item mix category-b">
-              <a class="works__link" href="#"
-                ><img
-                  class="works__img"
-                  src="images/portfolio/3.jpg"
-                  alt="фото портфолио"
-              /></a>
-            </li>
-            <li class="works__item mix category-b">
-              <a class="works__link" href="#"
-                ><img
-                  class="works__img"
-                  src="images/portfolio/4.jpg"
-                  alt="фото портфолио"
-              /></a>
-            </li>
-            <li class="works__item mix category-c">
-              <a class="works__link" href="#"
-                ><img
-                  class="works__img"
-                  src="images/portfolio/5.jpg"
-                  alt="фото портфолио"
-              /></a>
-            </li>
-            <li class="works__item mix category-c">
-              <a class="works__link" href="#"
-                ><img
-                  class="works__img"
-                  src="images/portfolio/6.jpg"
-                  alt="фото портфолио"
-              /></a>
-            </li>
-          </ul>
-          <button class="btn portfolio__btn" type="button">
-            Завантажити ще
-          </button>
-        </div>
-      </section>
-      <!----- section recall ----->
-      <section class="section recall">
+            <ul class="works">
+              <li class="works__item mix category-a">
+                <a class="works__link" href="#"
+                  ><img
+                    class="works__img"
+                    src="images/portfolio/1.jpg"
+                    alt="фото портфолио"
+                /></a>
+              </li>
+              <li class="works__item mix category-a">
+                <a class="works__link" href="#"
+                  ><img
+                    class="works__img"
+                    src="images/portfolio/2.jpg"
+                    alt="фото портфолио"
+                /></a>
+              </li>
+              <li class="works__item mix category-b">
+                <a class="works__link" href="#"
+                  ><img
+                    class="works__img"
+                    src="images/portfolio/3.jpg"
+                    alt="фото портфолио"
+                /></a>
+              </li>
+              <li class="works__item mix category-b">
+                <a class="works__link" href="#"
+                  ><img
+                    class="works__img"
+                    src="images/portfolio/4.jpg"
+                    alt="фото портфолио"
+                /></a>
+              </li>
+              <li class="works__item mix category-c">
+                <a class="works__link" href="#"
+                  ><img
+                    class="works__img"
+                    src="images/portfolio/5.jpg"
+                    alt="фото портфолио"
+                /></a>
+              </li>
+              <li class="works__item mix category-c">
+                <a class="works__link" href="#"
+                  ><img
+                    class="works__img"
+                    src="images/portfolio/6.jpg"
+                    alt="фото портфолио"
+                /></a>
+              </li>
+            </ul>
+            <button class="btn portfolio__btn" type="button">
+              Завантажити ще
+            </button>
+          </div>
+        </section> -->
+        <!----- section recall ----->
+        <!-- <section class="section recall">
         <div class="container">
           <h2 class="title">Відгуки клієнтів</h2>
           <div class="recall__inner">
@@ -280,9 +291,9 @@
             >
           </div>
         </div>
-      </section>
-      <!----- statistic ----->
-      <section class="section statistic">
+      </section> -->
+        <!----- statistic ----->
+        <!-- <section class="section statistic">
         <div class="container">
           <h2 class="sr-only">Статистика роботи</h2>
           <ul class="statistic__inner">
@@ -304,9 +315,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!----- contact ----->
-      <section class="section contact">
+      </section> -->
+        <!----- contact ----->
+        <!-- <section class="section contact">
         <div class="container">
           <h2 class="title">Контакти</h2>
           <div class="contact__inner">
@@ -401,18 +412,19 @@
             </form>
           </div>
         </div>
-      </section>
-      <!----- footer ----->
-      <footer class="footer">
+      </section> -->
+        <!----- footer ----->
+        <!-- <footer class="footer">
         <a class="logo footer__logo" href="#"
           ><img src="images/logo.svg" alt="logo"
         /></a>
-      </footer>
-    </main>
-    <!----- scripts ----->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/main.js"></script>
+      </footer> -->
+      </main>
+      <!----- scripts ----->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="js/mixitup.min.js"></script>
+      <script src="js/jquery.fancybox.js"></script>
+      <script src="js/main.js"></script>
+    </div>
   </body>
 </html>
