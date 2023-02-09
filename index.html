@@ -254,66 +254,53 @@
           </button>
         </div>
       </section>
-      <!----- section works ----->
+      <!----- section recall ----->
       <section class="section recall">
         <div class="container">
           <h2 class="title">Відгуки клієнтів</h2>
           <div class="recall__inner">
-            <div class="recall__client">
+            <figure class="quote">
               <img
-                class="recall__client-photo"
+                class="quote__img"
                 src="images/client-recall.jpg"
                 alt="фото клиента"
               />
-              <h3 class="recall__client-title">Марк Цукерберг</h3>
-              <p class="recall__client-descr">
+              <figcaption class="quote-name">Марк Цукерберг</figcaption>
+              <blockquote class="quote__text">
                 Фантастично! Я цілком задоволений роботою цього спеціаліста.
                 Швидко і якісно. Рекомендую!
-              </p>
-            </div>
-            <div
+              </blockquote>
+            </figure>
+            <a
               class="recall__video"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blanck"
               style="background-image: url('images/video-bg.jpg')"
+              ><span class="sr-only">Відтворити відео відгука</span></a
             >
-              <a
-                data-fancybox
-                data-width="640"
-                data-height="360"
-                class="arrow-play"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                target="_blank"
-              ></a>
-            </div>
           </div>
         </div>
       </section>
       <!----- statistic ----->
       <section class="section statistic">
         <div class="container">
+          <h2 class="sr-only">Статистика роботи</h2>
           <ul class="statistic__inner">
             <li class="statistic__item">
-              <h3 class="statistic__title">Виконаних робіт</h3>
-              <div class="statistic__item-text">
-                <p>56</p>
-              </div>
+              <p class="statistic__title">Виконаних робіт</p>
+              <span class="statistic__num">56</span>
             </li>
-            <li class="statistic__item statistic__item-clients">
-              <h3 class="statistic__title">Задоволених клієнтів</h3>
-              <div class="statistic__item-text">
-                <p>23</p>
-              </div>
+            <li class="statistic__item statistic__item--clients">
+              <p class="statistic__title">Задоволених клієнтів</p>
+              <span class="statistic__num">23</span>
             </li>
-            <li class="statistic__item statistic__item-coffee">
-              <h3 class="statistic__title">Випито горнят кави</h3>
-              <div class="statistic__item-text">
-                <p>477</p>
-              </div>
+            <li class="statistic__item statistic__item--coffee">
+              <p class="statistic__title">Випито горнят кави</p>
+              <span class="statistic__num">477</span>
             </li>
-            <li class="statistic__item statistic__item-review">
+            <li class="statistic__item statistic__item--review">
               <h3 class="statistic__title">Усього відгуків</h3>
-              <div class="statistic__item-text">
-                <p>48</p>
-              </div>
+              <span class="statistic__num">48</span>
             </li>
           </ul>
         </div>
@@ -324,54 +311,102 @@
           <h2 class="title">Контакти</h2>
           <div class="contact__inner">
             <div class="contact__inner-left">
-              <p class="contact-text">
-                Вийти зі мною на зв’язок можна, скориставшись контактною формою,
-                або напряму за номером телефона, email, у соцмережах:
-              </p>
-              <a class="phone" href="tel:+380501111111">+38 (050) 111 11 11</a>
-              <a class="email" href="mailto:frontend-monster@email.com"
-                >frontend-monster@email.com</a
-              >
-              <div class="contact__social">
-                <a href="#" class="social-ico"></a
-                ><a href="#" class="social-ico social-ico-fb"></a
-                ><a href="#" class="social-ico social-ico-telegram"></a>
+              <div class="contact__text">
+                <p>
+                  Вийти зі мною на зв’язок можна, скориставшись контактною
+                  формою, або напряму за номером телефона, email, у соцмережах:
+                </p>
               </div>
+              <address class="contact__details">
+                <ul class="contact__list">
+                  <li class="contact__item">
+                    <a class="contact__link" href="tel:+380501111111"
+                      >+38 (050) 111 11 11</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <a
+                      class="contact__link"
+                      href="mailto:frontend-monster@email.com"
+                      >frontend-monster@email.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      style="background-image: url('images/instagram.svg')"
+                      ><span class="sr-only">Відвідати наш instagram</span></a
+                    >
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      style="background-image: url('images/facebook.svg')"
+                      ><span class="sr-only">Відвідати наш facebook</span></a
+                    >
+                  </li>
+                  <li class="social__item">
+                    <a
+                      class="social__link"
+                      href="#"
+                      style="background-image: url('images/telegram.svg')"
+                      ><span class="sr-only">Відвідати наш telegram</span></a
+                    >
+                  </li>
+                </ul>
+              </address>
             </div>
             <form class="form">
-              <div class="form-top">
-                <div class="form-top__name">
-                  <label for="name">Ваше ім’я</label>
-                  <input type="text" placeholder="Іван" name="login" required />
-                </div>
-                <div class="form-top__tel">
-                  <label for="tel">Номер телефона</label>
+              <div class="form__row">
+                <div class="form-group">
+                  <label class="form__label" for="name">Ваше ім’я</label>
                   <input
-                    type="tel"
+                    class="form__field"
+                    type="text"
+                    placeholder="Іван"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form__label" for="phone">Номер телефона</label>
+                  <input
+                    class="form__field"
+                    type="text"
                     placeholder="+380501111111"
+                    id="phone"
                     name="phone"
                     required
                   />
                 </div>
               </div>
-              <div class="form-text">
-                <label for="text">Ваше повідомлення</label>
+              <div class="form-group form-group--textarea">
+                <label class="form__label" for="text">Ваше ім’я</label>
                 <textarea
+                  class="form__field form__field--text"
                   placeholder="Текст вашого повідомлення"
+                  id="text"
                   name="text"
+                  cols="30"
+                  rows="1"
                   required
                 ></textarea>
-                <button class="btn" type="submit">Надіслати</button>
               </div>
+              <button class="btn" type="submit">Надіслати</button>
             </form>
           </div>
         </div>
       </section>
       <!----- footer ----->
       <footer class="footer">
-        <div class="footer-logo">
-          <a class="logo" href="#"><img src="images/logo.svg" alt="logo" /></a>
-        </div>
+        <a class="logo footer__logo" href="#"
+          ><img src="images/logo.svg" alt="logo"
+        /></a>
       </footer>
     </main>
     <!----- scripts ----->
