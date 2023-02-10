@@ -9,32 +9,27 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="favicons/apple-touch-icon.png"
-    />
+      href="favicons/apple-touch-icon.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="favicons/favicon-32x32.png"
-    />
+      href="favicons/favicon-32x32.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="favicons/favicon-16x16.png"
-    />
+      href="favicons/favicon-16x16.png" />
     <link rel="manifest" href="favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="favicons/safari-pinned-tab.svg"
-      color="#278ba7"
-    />
+      color="#278ba7" />
     <meta name="msapplication-TileColor" content="#2d89ef" />
     <meta name="theme-color" content="#5660c2" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -43,38 +38,41 @@
       <!----- menu top ----->
       <header
         class="header"
-        style="background-image: url('images/bg_image.jpg')"
-      >
+        style="background-image: url('images/bg_image.jpg')">
+        <div class="header__nav">
+          <div class="container">
+            <nav class="header__top">
+              <a class="logo" href="#"
+                ><img src="images/logo.svg" alt="logo"
+              /></a>
+              <button class="burger">
+                <span class="burger__line"></span>
+                <span class="sr-only">Відкрити меню</span>
+              </button>
+              <ul class="menu__header">
+                <li class="menu__header-item">
+                  <a href="#" class="item">Про мене</a>
+                </li>
+                <li class="menu__header-item">
+                  <a href="#" class="item">Навички</a>
+                </li>
+                <li class="menu__header-item">
+                  <a href="#" class="item">Послуги</a>
+                </li>
+                <li class="menu__header-item">
+                  <a href="#" class="item">Портфоліо</a>
+                </li>
+                <li class="menu__header-item">
+                  <a href="#" class="item">Відгуки</a>
+                </li>
+                <li class="menu__header-item">
+                  <a href="#" class="item">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
         <div class="container">
-          <nav class="header__top">
-            <a class="logo" href="#"
-              ><img src="images/logo.svg" alt="logo"
-            /></a>
-            <ul class="menu__header">
-              <li class="menu__header-item">
-                <a href="#" class="item">Про мене</a>
-              </li>
-              <li class="menu__header-item">
-                <a href="#" class="item">Навички</a>
-              </li>
-              <li class="menu__header-item">
-                <a href="#" class="item">Послуги</a>
-              </li>
-              <li class="menu__header-item">
-                <a href="#" class="item">Портфоліо</a>
-              </li>
-              <li class="menu__header-item">
-                <a href="#" class="item">Відгуки</a>
-              </li>
-              <li class="menu__header-item">
-                <a href="#" class="item">Контакти</a>
-              </li>
-            </ul>
-            <button class="hamburger" type="button">
-              <div class="bar"></div>
-              <span class="sr-only">Відкрити меню</span>
-            </button>
-          </nav>
           <div class="header__inner">
             <h1 class="header__title">
               <span>Вітаю, я Сергій Сірко</span> frontend- розробник
@@ -116,8 +114,7 @@
               <img
                 class="skills__img"
                 src="images/skills_image.jpg"
-                alt="photo skills"
-              />
+                alt="photo skills" />
               <ul class="skills__info-item">
                 <li class="skills__item">
                   <span class="skills__text">html</span>
@@ -128,8 +125,7 @@
                     class="skills__meter"
                     min="0"
                     max="100"
-                    value="85"
-                  ></meter>
+                    value="85"></meter>
                 </li>
                 <li class="skills__item">
                   <span class="skills__text">css</span>
@@ -140,8 +136,7 @@
                     class="skills__meter"
                     min="0"
                     max="100"
-                    value="80"
-                  ></meter>
+                    value="80"></meter>
                 </li>
                 <li class="skills__item">
                   <span class="skills__text">js</span>
@@ -153,8 +148,7 @@
                     class="skills__meter"
                     min="0"
                     max="100"
-                    value="61"
-                  ></meter>
+                    value="61"></meter>
                 </li>
               </ul>
             </div>
