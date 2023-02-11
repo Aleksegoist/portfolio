@@ -947,4 +947,46 @@ body {
     background-size: cover;
     transform: translate(-31%, -50%);
   }
+
+  .statistic__inner {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 166px 166px;
+    gap: 14px;
+  }
+
+  .statistic__item {
+    margin-bottom: 0;
+  }
+
+  .statistic__item {
+    padding: 60px 15px 25px;
+    background-image: url(../images/resize_png/works-resize.png);
+    background-position: top 25px center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .statistic__item--clients {
+    background-image: url(../images/resize_png/clients-resize.png);
+  }
+
+  .statistic__item--coffee {
+    background-image: url(../images/resize_png/cofee-resize.png);
+  }
+
+  .statistic__item--review {
+    background-image: url(../images/resize_png/review-resize.png);
+  }
+
+  .statistic__title {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+  }
+
+  .statistic__num {
+    font-size: 30px;
+  }
 }
