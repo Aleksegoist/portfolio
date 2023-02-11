@@ -331,108 +331,110 @@
           </div>
         </section>
         <!----- contact ----->
-        <!-- <section class="section contact">
-        <div class="container">
-          <h2 class="title">Контакти</h2>
-          <div class="contact__inner">
-            <div class="contact__inner-left">
-              <div class="contact__text">
-                <p>
-                  Вийти зі мною на зв’язок можна, скориставшись контактною
-                  формою, або напряму за номером телефона, email, у соцмережах:
-                </p>
+        <section class="section contact">
+          <div class="container">
+            <h2 class="title contact__title">Контакти</h2>
+            <div class="contact__inner">
+              <div class="contact__inner-left">
+                <div class="contact__text">
+                  <p>
+                    Вийти зі мною на зв’язок можна, скориставшись контактною
+                    формою, або напряму за номером телефона, email, у
+                    соцмережах:
+                  </p>
+                </div>
+                <address class="contact__details">
+                  <ul class="contact__list">
+                    <li class="contact__item">
+                      <a class="contact__link" href="tel:+380501111111"
+                        >+38 (050) 111 11 11</a
+                      >
+                    </li>
+                    <li class="contact__item">
+                      <a
+                        class="contact__link"
+                        href="mailto:frontend-monster@email.com"
+                        >frontend-monster@email.com</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="social">
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="#"
+                        style="background-image: url('images/instagram.svg')"
+                        ><span class="sr-only">Відвідати наш instagram</span></a
+                      >
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="#"
+                        style="background-image: url('images/facebook.svg')"
+                        ><span class="sr-only">Відвідати наш facebook</span></a
+                      >
+                    </li>
+                    <li class="social__item">
+                      <a
+                        class="social__link"
+                        href="#"
+                        style="background-image: url('images/telegram.svg')"
+                        ><span class="sr-only">Відвідати наш telegram</span></a
+                      >
+                    </li>
+                  </ul>
+                </address>
               </div>
-              <address class="contact__details">
-                <ul class="contact__list">
-                  <li class="contact__item">
-                    <a class="contact__link" href="tel:+380501111111"
-                      >+38 (050) 111 11 11</a
+              <form class="form">
+                <div class="form__row">
+                  <div class="form-group">
+                    <label class="form__label" for="name">Ваше ім’я</label>
+                    <input
+                      class="form__field"
+                      type="text"
+                      placeholder="Іван"
+                      id="name"
+                      name="name"
+                      required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form__label" for="phone"
+                      >Номер телефона</label
                     >
-                  </li>
-                  <li class="contact__item">
-                    <a
-                      class="contact__link"
-                      href="mailto:frontend-monster@email.com"
-                      >frontend-monster@email.com</a
-                    >
-                  </li>
-                </ul>
-                <ul class="social">
-                  <li class="social__item">
-                    <a
-                      class="social__link"
-                      href="#"
-                      style="background-image: url('images/instagram.svg')"
-                      ><span class="sr-only">Відвідати наш instagram</span></a
-                    >
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link"
-                      href="#"
-                      style="background-image: url('images/facebook.svg')"
-                      ><span class="sr-only">Відвідати наш facebook</span></a
-                    >
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link"
-                      href="#"
-                      style="background-image: url('images/telegram.svg')"
-                      ><span class="sr-only">Відвідати наш telegram</span></a
-                    >
-                  </li>
-                </ul>
-              </address>
+                    <input
+                      class="form__field"
+                      type="text"
+                      placeholder="+380501111111"
+                      id="phone"
+                      name="phone"
+                      required />
+                  </div>
+                </div>
+                <div class="form-group form-group--textarea">
+                  <label class="form__label" for="text"
+                    >Ваше повідомлення</label
+                  >
+                  <textarea
+                    class="form__field form__field--text"
+                    placeholder="Текст вашого повідомлення"
+                    id="text"
+                    name="text"
+                    cols="30"
+                    rows="1"
+                    required></textarea>
+                </div>
+                <button class="btn" type="submit">Надіслати</button>
+              </form>
             </div>
-            <form class="form">
-              <div class="form__row">
-                <div class="form-group">
-                  <label class="form__label" for="name">Ваше ім’я</label>
-                  <input
-                    class="form__field"
-                    type="text"
-                    placeholder="Іван"
-                    id="name"
-                    name="name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label class="form__label" for="phone">Номер телефона</label>
-                  <input
-                    class="form__field"
-                    type="text"
-                    placeholder="+380501111111"
-                    id="phone"
-                    name="phone"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-group form-group--textarea">
-                <label class="form__label" for="text">Ваше ім’я</label>
-                <textarea
-                  class="form__field form__field--text"
-                  placeholder="Текст вашого повідомлення"
-                  id="text"
-                  name="text"
-                  cols="30"
-                  rows="1"
-                  required
-                ></textarea>
-              </div>
-              <button class="btn" type="submit">Надіслати</button>
-            </form>
           </div>
-        </div>
-      </section> -->
+        </section>
         <!----- footer ----->
-        <!-- <footer class="footer">
-        <a class="logo footer__logo" href="#"
-          ><img src="images/logo.svg" alt="logo"
-        /></a>
-      </footer> -->
+        <footer class="footer">
+          <a class="logo footer__logo" href="#"
+            ><img src="images/logo.svg" alt="logo"
+          /></a>
+        </footer>
       </main>
       <!----- scripts ----->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

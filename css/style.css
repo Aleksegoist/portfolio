@@ -837,6 +837,38 @@ body {
   .portfolio__menu-btn {
     font-size: 18px;
   }
+
+  .contact {
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
+  .contact__title {
+    right: 0;
+    transform: translateX(-50%);
+  }
+
+  .contact__list {
+    margin-bottom: 31px;
+  }
+  .contact__inner {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .form__row {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .form-group--textarea {
+    margin-bottom: 11px;
+  }
+
+  .footer {
+    padding: 32px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -988,5 +1020,11 @@ body {
 
   .statistic__num {
     font-size: 30px;
+  }
+
+  .contact {
+    padding-bottom: 50px;
+    padding-top: 0;
+    /* padding: 0; */
   }
 }
