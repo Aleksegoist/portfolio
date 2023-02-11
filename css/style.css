@@ -800,6 +800,10 @@ body {
     height: auto;
     margin-bottom: 15px;
   }
+
+  .recall__inner {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
@@ -810,11 +814,8 @@ body {
     margin-bottom: 30px;
   }
 
-  .portfolio {
-    padding-top: 16px;
-  }
-
-  .portfolio__title {
+  .portfolio__title,
+  .recall__title {
     left: 0;
     transform: translateX(0);
   }
@@ -901,5 +902,49 @@ body {
   .service__item-title {
     font-size: 20px;
     margin-bottom: 15px;
+  }
+
+  .portfolio {
+    padding-top: 16px;
+  }
+
+  .quote {
+    padding: 0;
+  }
+
+  .quote__img {
+    margin-bottom: 31px;
+  }
+
+  .quote-name {
+    font-size: 20px;
+  }
+
+  .quote__text {
+    font-size: 16px;
+  }
+
+  .recall__inner {
+    gap: 0;
+    position: relative;
+  }
+
+  .recall__video {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 87px;
+    margin-top: 90px;
+  }
+
+  .recall__video::before {
+    width: 17px;
+    height: 20px;
+    background-size: cover;
+    transform: translate(-31%, -50%);
   }
 }
