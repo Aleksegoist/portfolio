@@ -144,6 +144,17 @@ body {
   position: relative;
 }
 
+.header__nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.sticky {
+  background-color: #7792e0;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
