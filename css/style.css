@@ -77,7 +77,31 @@ body {
 }
 
 .wrapper {
+  position: relative;
   overflow-x: hidden;
+}
+
+.wrapper::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 95, 0.3);
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.lock .wrapper::before {
+  scale: 100;
+  opacity: 1;
 }
 
 .container {
@@ -142,24 +166,29 @@ body {
   background-blend-mode: overlay;
   color: #ffffff;
   position: relative;
+  padding-top: 75px;
 }
 
 .header__nav {
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   z-index: 999;
+  padding-top: 75px;
+  transition: padding 0.3s, background-color 0.3s;
 }
 
-.sticky {
+.header__nav.fixed {
   background-color: #7792e0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 75px;
 }
 
 .logo {
@@ -189,13 +218,11 @@ body {
   max-width: 530px;
   font-weight: 700;
   font-size: 90px;
-  /* font-size: calc(40px + (90 - 40) * ((100vw - 375px) / (1920 -375))); */
   transform: translateY(-21px);
 }
 
 .header__title span {
   font-size: 48px;
-  /* font-size: calc(28px + (48 - 28) * ((100vw - 375px) / (1920 -375))); */
   font-weight: 400;
 }
 
@@ -467,27 +494,6 @@ body {
 
 .works__img {
 }
-
-/* .btn {
-  cursor: pointer;
-  transition: color 0.4s background-color 0.5s, box-shadow 0.2s;
-} */
-
-/* .btn:hover {
-  color: #2352de;
-  background-color: #fff;
-  box-shadow: inset 0px 0px 0px 1px #2352de;
-} */
-
-/* .btn:focus {
-  box-shadow: 0px 0px 0px 3px rgba(35, 82, 222, 0.5);
-}
-
-.btn:active {
-  color: #fff;
-  background-color: #2352de;
-  box-shadow: inset 0px 7px 4px rgba(0, 0, 0, 0.25);
-} */
 
 .recall {
   text-align: center;
@@ -770,7 +776,7 @@ body {
   }
 
   .header__nav {
-    position: relative;
+    padding: 15px 0;
     transition: background-color 0.3s;
   }
 
@@ -783,18 +789,15 @@ body {
     opacity: 1;
   }
 
-  .header__top {
-    padding: 15px 0;
-  }
-
   .menu__header {
     position: absolute;
-    z-index: 100;
+    z-index: 999;
     right: 0;
     top: 100%;
     max-width: 500px;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
     flex-direction: column;
     text-align: center;
     background-color: #7792e0;
